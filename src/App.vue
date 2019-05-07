@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <topmenu></topmenu>
+    <!--<topmenu></topmenu>-->
     <!--<layout></layout>-->
     <!--<index></index>-->
+    <myheader></myheader>
   </div>
 </template>
 
@@ -10,17 +11,22 @@
 import topmenu from './components/common/topmenu'
 import layout from './components/common/layout'
 import leftmenu from './components/common/leftmenu'
+import top from './components/common/top'
 import index from './components/index'
+import myheader from './components/common/myheader'
 
 export default {
   data () {
-    return {}
+    return {
+    }
   },
   components: {
     topmenu,
     layout,
     leftmenu,
-    index
+    index,
+    top,
+    myheader
   },
   name: 'App'
 }
