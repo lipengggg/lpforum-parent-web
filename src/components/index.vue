@@ -1,26 +1,33 @@
 <template>
-  <el-container id = "index">
-    <el-aside width="100%">Aside</el-aside>
-    <el-container>
-      <el-header>Header</el-header>
-      <el-main>Main</el-main>
-      <el-footer>Footer</el-footer>
-    </el-container>
-  </el-container>
+  <div id="particles">
+  </div>
 </template>
 
 <script>
-export default {
-  data () {
-    return {
+
+  export default {
+    data () {
+      return {
+      }
+    },
+    components: {
+
+    },
+    mounted(){
+      particlesJS.load('particles','static/particles.json');
     }
   }
-}
 </script>
 
 <style scoped>
-  #index{
+  #particles{
+    position: absolute;
+    overflow: scroll;
     width: 100%;
-    height: 100%;
+    height: 3000px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
   }
 </style>

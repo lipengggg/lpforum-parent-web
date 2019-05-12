@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <!--<topmenu></topmenu>-->
-    <!--<layout></layout>-->
-    <!--<index></index>-->
-    <myheader></myheader>
+    <index></index>
+    <div class="divcontent">
+      <myheader></myheader>
+      <mycontent></mycontent>
+    </div>
+    <div class="myroot">
+      <myroot></myroot>
+    </div>
   </div>
 </template>
 
 <script>
-import topmenu from './components/common/topmenu'
-import layout from './components/common/layout'
 import leftmenu from './components/common/leftmenu'
-import top from './components/common/top'
 import index from './components/index'
 import myheader from './components/common/myheader'
+import mycontent from './components/content/mycontent'
+import myroot from './components/root/myroot'
 
 export default {
   data () {
@@ -21,16 +24,19 @@ export default {
     }
   },
   components: {
-    topmenu,
-    layout,
-    leftmenu,
     index,
-    top,
-    myheader
+    myheader,
+    mycontent,
+    myroot
   },
   name: 'App'
 }
 </script>
 
 <style>
+  .divcontent{
+    width: 80%;
+    margin: 0 auto;
+    height: 1000px;
+  }
 </style>
